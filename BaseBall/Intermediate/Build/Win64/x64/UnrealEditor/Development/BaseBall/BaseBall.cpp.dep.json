@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\github\\networkbassball\\baseball\\source\\baseball\\baseball.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\github\\networkbassball\\baseball\\intermediate\\build\\win64\\x64\\baseballeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\github\\networkbassball\\baseball\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\baseball\\definitions.baseball.h",
+            "d:\\github\\networkbassball\\baseball\\source\\baseball\\baseball.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
