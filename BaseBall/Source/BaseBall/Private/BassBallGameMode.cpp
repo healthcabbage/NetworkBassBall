@@ -19,7 +19,7 @@ void ABassBallGameMode::GenerateNewNumbers()
 	UE_LOG(LogTemp, Warning, TEXT("Generated Numbers: %d, %d, %d"), SecretNumbers[0], SecretNumbers[1], SecretNumbers[2]);
 }
 
-void ABassBallGameMode::CheckBaseBallGame(const FString& PlayerInput)
+void ABassBallGameMode::CheckBaseBallGame(const FString& PlayerInput, const FString& userid)
 {
 	int S = 0, B = 0, Out = 0;
 
@@ -27,6 +27,13 @@ void ABassBallGameMode::CheckBaseBallGame(const FString& PlayerInput)
 
 	FString Result = FString::Printf(TEXT("%dS, %dB, %dOUT"), S, B, Out);
 	UKismetSystemLibrary::PrintString(this, Result, true, true, FColor::Blue, 2.0f);
+
+	if (S == 3)
+	{
+		FString Win = FString::Printf(TEXT("%s : Victory"), *userid);
+		UKismetSystemLibrary::PrintString(this, Win, true, true, FColor::Blue, 2.0f);
+		Isvictory = true;
+	}
 }
 
 

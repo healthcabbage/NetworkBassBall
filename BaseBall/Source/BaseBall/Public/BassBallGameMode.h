@@ -4,8 +4,6 @@
 #include "GameFramework/GameMode.h"
 #include "BassBallGameMode.generated.h"
 
-class APlayerController;
-
 UCLASS()
 class BASEBALL_API ABassBallGameMode : public AGameMode
 {
@@ -20,13 +18,13 @@ protected:
 	UPROPERTY(BlueprintReadOnly, Category = "Game Set")
 	TArray<int32> SecretNumbers;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controller")
-	TSubclassOf<APlayerController> PlayerControllerClass;
+	UPROPERTY(BlueprintReadOnly, Category = "victory check")
+	bool Isvictory = false;
 
 public:
 	UFUNCTION(BlueprintCallable, Category = "Game Logic")
 	void GenerateNewNumbers();
 
 	UFUNCTION(BlueprintCallable, Category = "BaseBallGame")
-	void CheckBaseBallGame(const FString& PlayerInput);
+	void CheckBaseBallGame(const FString& PlayerInput, const FString& userid);
 };
