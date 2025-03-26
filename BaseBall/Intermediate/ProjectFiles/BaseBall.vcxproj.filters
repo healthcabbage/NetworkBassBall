@@ -42,6 +42,9 @@
     <Filter Include="Source\BaseBall\Private">
       <UniqueIdentifier>{9BB0DC64-45BC-3063-815C-4755117F2692}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\BaseBall\Private\BaseballJudge.cpp">
+      <Filter>Source\BaseBall\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BaseBall\Private\BassBallGameMode.cpp">
       <Filter>Source\BaseBall\Private</Filter>
     </ClCompile>
@@ -51,6 +54,9 @@
     <Filter Include="Source\BaseBall\Public">
       <UniqueIdentifier>{6E231ABB-E7AD-38A1-B9C8-5D673E1BD191}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\BaseBall\Public\BaseballJudge.h">
+      <Filter>Source\BaseBall\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BaseBall\Public\BassBallGameMode.h">
       <Filter>Source\BaseBall\Public</Filter>
     </ClCompile>
